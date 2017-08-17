@@ -25,7 +25,11 @@
 
     <?php get_template_part('modules/header/top','bar'); ?>
 
-    <?php get_template_part('modules/social/social','fa'); ?>
+    <?php //get_template_part('modules/social/social','fa'); ?>
+    <div id="social-icons">
+        <?php get_template_part('modules/social/social', 'fa'); ?>
+        <div id="top-search-form"><?php get_search_form(); ?></div>
+    </div>
 
 	
 	<div class="mega-container">
