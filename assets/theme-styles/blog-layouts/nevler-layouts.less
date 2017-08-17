@@ -1,0 +1,77 @@
+/* Nevler Layout */
+.nevler {
+  h2.entry-title {
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 8px;
+    a {
+      color: black;
+    }
+  }
+  .out-thumb {
+    padding-left: 1px;
+    .entry-excerpt {
+      font-size: 15px;
+    }
+    .postedon {
+      a {
+        text-decoration: none;
+        padding: 1px 4px;
+        display: inline-block;
+        .transition(0.2s all ease);
+        border-radius: 1px;
+        &:hover {
+          .transform(scale(1.05));
+        }
+      }
+      .categories a {
+        background: @accent;
+        color: @onaccent;
+      }
+      .posted-on a {
+        background: #555;
+        color: white;
+        margin-left: 3px;
+      }
+      .byline {
+        background: #d84242;
+        color: @onaccent;
+        padding: 0 4px;
+        margin-left: 3px;
+        border-radius: 1px;
+        a {
+          color: @onaccent;
+          padding: 1px 2px;
+        }
+      }
+    }
+  }
+}
+
+.sticky.nevler, .format-video.nevler, .format-image.nevler {
+  h2.entry-title {
+    &:before {
+      content: "\f005";
+      font-family: "FontAwesome";
+      font-size: 25px;
+      margin-right: 9px;
+      opacity: 0.95;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+}
+.format-video.nevler {
+  h2.entry-title {
+    &:before {
+      content: "\f16a";
+    }
+  }
+}
+.format-image.nevler {
+  h2.entry-title {
+    &:before {
+      content: "\f030";
+    }
+  }
+}

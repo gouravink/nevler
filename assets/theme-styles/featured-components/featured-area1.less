@@ -1,0 +1,122 @@
+/*Featured Area 1*/
+#featured-area-1 {
+  position: relative;
+  overflow: auto;
+  .section-title {
+    margin-bottom: 10px;
+    margin-top: 16px;
+  }
+  .popular-articles {
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 999;
+  }
+  .imgcontainer {
+    padding: 8px;
+    position: relative;
+    .postdate {
+      display: inline-block;
+      padding: 0px;
+      color: @accent;
+      /* border: dashed 1px @accent; */
+      background: fade(darken(white,4%),98%);
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      .transform(translateX(-6px));
+      text-align: center;
+      font-weight: normal;
+      text-transform: uppercase;
+      z-index: 10;
+      .transition(0.4s all ease);
+      pointer-events: none;
+      border-radius: 2px;
+      overflow: hidden;
+      span {
+        display: block;
+      }
+      .day {
+        font-size: 22px;
+        padding: 5px;
+      }
+      .month {
+        background: @accent;
+        color: white;
+        font-size: 13px;
+        padding:  2px 5px;
+      }
+    }
+    .popimage {
+      position: relative;
+      overflow: hidden;
+      .transition( 0.6s all ease );
+      -webkit-backface-visibility: hidden;
+
+      img {
+        display: block;
+        .transition( 0.4s all ease );
+        .transform(scale(1.02));
+        -webkit-backface-visibility: hidden;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+      }
+      &:hover {
+        img {
+          .transform( translateX(0px) );
+          opacity: 1;
+        }
+        .titledesc {
+          display: block;
+          .transform( translateX(0px) );
+          /* left: 0; */
+          opacity: 1;
+
+        }
+      }
+    }
+    .titledesc {
+      display: block;
+      position: absolute;
+
+      .transition(0.8s all ease);
+      bottom: 5px;
+      left: 0px;
+      opacity: 1;
+      pointer-events: none;
+      h2 {
+        font-size: 15px;
+        background: fade(black, 85%);
+        padding: 5px 10px;
+        margin: 0;
+        text-align: left;
+        color: white;
+        font-weight: normal;
+        position: relative;
+        a {
+          color: white;
+        }
+      }
+
+    }
+
+    .popimage:hover {
+      img {
+        .transform(scale(1.02));
+        -webkit-filter: brightness(0.9);
+        filter: brightness(0.9);
+      }
+      .titledesc {
+        .transform( translateX(0px));
+      }
+    }
+  }
+  .imgcontainer:hover {
+    .postdate {
+      opacity: 0;
+      left: 0px;
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+/* ---------- Header ------------- */
+
+
+#top-bar {
+  background: @menu-bg;
+  // 	border-bottom: solid 5px darken(#d84242, 10%);;
+  .top-bar-inner {
+    padding: 0;
+  }
+  .social-icons {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+#masthead {
+  text-align: left;
+  #text-title-desc {
+    clear: none;
+    float: left;
+    @media screen and (max-width: 768px) {
+      float: none;
+    }
+    vertical-align: middle;
+  }
+  h1.site-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    a {
+      color: white;
+    }
+  }
+  h2.site-description {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+  }
+}
+.site-branding {
+  padding: 25px 0;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+#site-logo {
+  display: inline-block;
+  float: left;
+  @media screen and (max-width: 768px) {
+    float: none;
+  }
+}

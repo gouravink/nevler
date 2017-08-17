@@ -1,0 +1,57 @@
+.body-font {
+  font-family: "Lato", sans-serif;
+}
+.title-font {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+body {
+  .body-font;
+  background: #d84242;
+  word-wrap: break-word;
+}
+#page {
+
+}
+.mega-container {
+  background: white;
+  max-width: 1170px;
+  margin: auto;
+  overflow: visible;
+  border-right: solid 5px black;
+  border-left: solid 5px @accent;
+}
+a {
+  color: @accent;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: @accent;
+  }
+}
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+
+/* section titles */
+.section-title {
+  font-weight: normal;
+  color: @accent;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-transform: none;
+  font-weight: bold;
+  text-indent: 10px;
+  font-size: 20px;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+}
+
+#content {
+  margin-top: 30px;
+}
